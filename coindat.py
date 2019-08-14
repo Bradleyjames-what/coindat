@@ -75,10 +75,12 @@ def get_day_list():
     volumes_list = volumes_list.sort_values(by='day_volume', ascending=False).head(10)
     return volumes_list
 
+
 def get_week_volume():
     week_volumes = convert_volumes()
     week_volumes = week_volumes.sort_values(by='week_volume', ascending=False).head(10)
     return week_volumes
+
 
 if __name__ == '__main__':
     main()
